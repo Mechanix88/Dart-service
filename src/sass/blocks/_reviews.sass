@@ -1,0 +1,120 @@
+.reviews__left
+    width: 45%
+    height: 100%
+    justify-content: center
+    align-items: flex-start
+    display: flex
+    flex-direction: column
+    @include adaptive(tablet)
+        width: auto
+        align-items: center
+
+.reviews__right
+    width: 55%
+    height: 100%
+    position: relative
+    @include adaptive(tablet)
+        width: auto 
+        align-items: center
+
+.reviews__wrap
+    height: 100%
+    display: flex
+    align-items: center
+    @include adaptive(tablet)
+        flex-direction: column
+
+.reviews__list
+    padding: 0
+    margin: 0
+    list-style: none
+    display: flex
+    flex-direction: column
+    justify-content: space-around
+    height: 100%
+    position: relative
+    
+    
+
+.reviews__item
+    display: none
+    margin-bottom: 4.375rem
+    @include adaptive(smart)
+        flex-direction: column
+        align-items: center
+        margin-bottom: 1.875rem
+        width: auto !important
+
+
+.reviews__avatar
+    align-items: center
+    display: flex
+
+.reviews__img
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15)
+    border-radius: 50%
+
+.reviews__desc
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15)
+    border-radius: 5px
+    background-color: #ffffff
+    padding-left: 30px
+    padding-right: 40px
+    padding-top: 15px
+    padding-bottom: 15px
+    margin-left: 50px
+    @include adaptive(smart)
+        margin-left: 0px
+        margin-top: 20px
+
+.reviews__text
+    color: #78909c
+    font-size: 0.9375rem
+    font-weight: 400
+    font-style: italic
+    line-height: 1.6
+    margin: 0
+
+.reviews__arrow-forward
+    height: 20px
+    width: 25px
+    position: absolute
+    right: 37%
+    top: -46px
+    cursor: pointer
+    z-index: 99
+    transform: translateX(50%)
+    @include adaptive(tablet)
+        right: 50%
+
+.reviews__arrow-back
+    height: 20px
+    width: 25px
+    position: absolute
+    right: 37%
+    bottom: 0px
+    transform: rotate(180deg)
+    cursor: pointer
+    z-index: 99
+    @include adaptive(tablet)
+        right: 48%
+
+.reviews__arrow-top
+    position: absolute
+    top: 12px
+    left: 0px
+    width: 15px
+    height: 3px
+    background: #ffffff
+    transform: rotate(-50deg)
+    
+
+.reviews__arrow-bottom
+    position: absolute
+    top: 12px
+    left: 9px
+    width: 15px
+    height: 3px
+    background: #ffffff
+    transform: rotate(50deg)
+   

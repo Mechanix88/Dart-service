@@ -1,0 +1,79 @@
+.nav
+    display: flex
+    list-style: none
+    justify-content: space-around
+    min-width: 441px
+    @media screen and (max-width: 900px) 
+        display: none
+        min-width: auto
+        
+    
+
+.nav__link
+    color: #ffffff
+    text-decoration: none
+    font-size: 15px
+    line-height: 1.5
+    font-weight: 500
+    transition: color 1s
+    &:hover
+        color: #061e37
+        
+
+.nav__item
+    position: relative
+
+.header
+    display: flex
+    align-items: center
+    padding-top: 50px
+    width: 100%
+    justify-content: space-between
+    margin-bottom: 140px
+    @include adaptive(pc)
+        margin-bottom: 50px
+    
+
+.logo__text
+    font-size: 15px
+    font-weight: 800
+    color: #ffffff
+    text-transform: uppercase
+    min-width: 180px
+
+.logo
+    display: flex
+    position: relative
+    margin-left: 40px
+    
+    &::before
+        content: ""
+        position: absolute
+        height: 30px
+        width: 30px
+        background-image: url("./../img/icons/logo.png")
+        left: -40px
+        top: 2px
+        display: block
+
+    
+.logo__icon
+    align-items: center
+    height: 30px
+    margin-top: 15px
+
+
+.sign-up
+    border: 1px solid #ffffff
+    background: transparent
+    border-radius: 4px
+    min-width: 80px
+    font-size: 12px
+    font-weight: 400
+    color: #ffffff
+    height: 25px
+    @include adaptive (pc)
+        margin-right: 10%
+
+
+    
